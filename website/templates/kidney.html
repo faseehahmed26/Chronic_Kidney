@@ -1,79 +1,89 @@
 {% extends 'base.html' %}  {% block title %}Chronic Kidney Disease Predictor {% endblock %}
 {% block content %}
 
-<div class="row"  style="margin-bottom: 125px;">
-    <div class="col-md-2"></div>
-    <div class="col-md-8">
+<div class="row d-flex justify-content-center " >
+   
+    <div class="col-md-12">
         <center><h1>Kidney Disease Predictor</h1></center>
         <div class="card card-body" style="border: 1px solid black;">
-            <form class="form-horizontal"  action="{{ url_for('views.predict') }}"  method="POST">
+            <form class="form-horizontal"  action="{{ url_for('views.predictPage') }}"  method="POST">
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-6">
                         <div class="form-group">
-                            <input style="border: 1px solid black;" class="form-control" type="text" name="wc" placeholder="wc">
+                            <input style="border: 1px solid black;" class="form-control" type="text" name="wc" placeholder="white blood cell ">
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-6">
                         <div class="form-group">
-                            <input style="border: 1px solid black;" class="form-control" type="text" name="bu" placeholder="bu">
+                            <input style="border: 1px solid black;" class="form-control" type="text" name="bu" placeholder="blood urea">
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <input style="border: 1px solid black;" class="form-control" type="text" name="bgr" placeholder="bgr">
-                        </div>
-                    </div>
-                  
                 </div>
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-6">
                         <div class="form-group">
-                            <input style="border: 1px solid black;" class="form-control" type="text" name="sc" placeholder="sc">
+                            <input style="border: 1px solid black;" class="form-control" type="text" name="bgr" placeholder="blood glucose random">
                         </div>
                     </div>
-                   
-                    <div class="col-md-4">
+               
+                    <div class="col-md-6">
                         <div class="form-group">
-                            <input style="border: 1px solid black;" class="form-control" type="text" name="pcv" placeholder="pcv">
+                            <input style="border: 1px solid black;" class="form-control" type="text" name="sc" placeholder="serum creatinine">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input style="border: 1px solid black;" class="form-control" type="text" name="pcv" placeholder="packed cell volume">
                         </div>
                     </div>
 
-                    <div class="col-md-4">
+                    <div class="col-md-6">
                         <div class="form-group">
-                            <input style="border: 1px solid black;" class="form-control" type="text" name="al" placeholder="al">
+                            <input style="border: 1px solid black;" class="form-control" type="text" name="al" placeholder="albumin">
                         </div>
-                    </div>
-
-                   
+                    </div> 
                 </div>
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-6">
                         <div class="form-group">
-                            <input style="border: 1px solid black;" class="form-control" type="text" name="hemo" placeholder="hemo">
+                            <input style="border: 1px solid black;" class="form-control" type="text" name="hm" placeholder="haemoglobin">
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-6">
                             <div class="form-group">
                                 <input style="border: 1px solid black;" class="form-control" type="text" name="age" placeholder="age">
                             </div>
                     </div>
-                    <div class="col-md-4">
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
                         <div class="form-group">
-                            <input style="border: 1px solid black;" class="form-control" type="text" name="su" placeholder="su">
+                            <input style="border: 1px solid black;" class="form-control" type="text" name="su" placeholder="sugar">
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-6">
                         <div class="form-group">
-                            <input style="border: 1px solid black;" class="form-control" type="text" name="htn" placeholder="htn">
+                            <input style="border: 1px solid black;" class="form-control" type="text" name="htn" placeholder="hypertension">
                         </div>
                     </div>
                 </div>
-                </div>
-                <input type="submit" class="btn btn-info btn-block" value="Predict">
             </form>
+         
+            </div>
+            
+              
+                  <div class="">    
+                    <input type="submit" class="btn btn-info btn-block "  value="Predict">
+                      </div>
+           
+            
+            
         </div>
+     
+        
     </div>
-    <div class="col-md-2"></div>
 </div> <br>
 
 
