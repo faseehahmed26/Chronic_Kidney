@@ -1,0 +1,70 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %}
+{% block content %}
+{% if message %}
+        <div class="alert alert-danger">{{ message }}</div>
+    {% endif %}
+
+
+    
+    <main role="main">
+      <section class="jumbotron border-top p-3 p-md-5 text-white rounded bg-dark text-center " >
+        <div class="container">
+          <h1 class="jumbotron-heading">Chronic Kidney Disease Prediction</h1>
+          <p class="lead"> Kidney disease (KD) is one of the most
+critical health problems due to its increasing prevalence. In this
+paper, we aim to test the ability of machine learning algorithms
+for the prediction of chronic kidney disease using the smallest
+subset of features</p>
+          <p>
+            <a href="https://www.mayoclinic.org/diseases-conditions/chronic-kidney-disease/symptoms-causes/syc-20354521" class="btn btn-primary my-2">Read More about the Disease</a>
+          </p>
+        </div>
+      </section>
+    
+      <div class="row gx-4 gx-lg-5">
+        <div class="col-md-4 mb-5">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h2 class="card-title">What causes CKD?</h2>
+                    <p class="card-text">The two main causes of chronic kidney disease are diabetes and high blood pressure, which are responsible for up to two-thirds of the cases. Diabetes happens when your blood sugar is too high, causing damage to many organs in your body, including the kidneys and heart, as well as blood vessels, nerves and eyes. High blood pressure, or hypertension, occurs when the pressure of your blood against the walls of your blood vessels increases. If uncontrolled, or poorly controlled, high blood pressure can be a leading cause of heart attacks, strokes and chronic kidney disease. Also, chronic kidney disease can cause high blood pressure.</p>
+                </div>
+                <div class="card-footer"><a class="btn btn-primary btn-sm" href="#!">More Info</a></div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-5">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h2 class="card-title">What are the symptoms of CKD?</h2>
+                    <p class="card-text">The two main causes of chronic kidney disease are diabetes and high blood pressure, which are responsible for up to two-thirds of the cases. Diabetes happens when your blood sugar is too high, causing damage to many organs in your body, including the kidneys and heart, as well as blood vessels, nerves and eyes. High blood pressure, or hypertension, occurs when the pressure of your blood against the walls of your blood vessels increases. If uncontrolled, or poorly controlled, high blood pressure can be a leading cause of heart attacks, strokes and chronic kidney disease. Also, chronic kidney disease can cause high blood pressure.</p>
+                </div>
+                <div class="card-footer"><a class="btn btn-primary btn-sm" href="#!">More Info</a></div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-5">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h2 class="card-title">Facts about Chronic Kidney Disease</h2>
+                    <p class="card-text">37 million American adults have CKD and millions of others are at increased risk.
+                        Early detection can help prevent the progression of kidney disease to kidney failure.
+                        Heart disease is the major cause of death for all people with CKD.
+                        Glomerular filtration rate (GFR) is the best estimate of kidney function.
+                        Hypertension causes CKD and CKD causes hypertension.
+                        Persistent proteinuria (protein in the urine) means CKD is present.
+                        High risk groups include those with diabetes, hypertension and family history of kidney failure.</p>
+                </div>
+                <div class="card-footer"><a class="btn btn-primary btn-sm" href="#!">More Info</a></div>
+            </div>
+        </div>
+</div>
+
+
+ <!-- Footer-->
+ <footer class="py-5 bg-dark">
+    <div class="container px-4 px-lg-5"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2021</p></div>
+</footer>
+</main>
+
+    
+
+
+{% endblock %}
